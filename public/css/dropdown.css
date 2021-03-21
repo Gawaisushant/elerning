@@ -1,0 +1,578 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #181717;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(5, 5, 5);
+                            color: #ffff; transform: translate(0); }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body , html {
+  
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home{
+  background-image: url("../images/bg6.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 111;
+  color: #ffffff;
+}
+
+.blue{
+  color: #097be6;
+}
+
+
+.logo{
+  width: 200px;
+  height: 50px;
+}
+/*////// button styling ////////*/
+
+.right{
+  float: right;
+}
+
+
+.fourth {
+  border-color: #f1c40f;
+  background-color: rgb(23, 185, 226);
+  color: rgb(31, 29, 29);
+  background-image: -webkit-linear-gradient(45deg, #0dc716 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f10f0f 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////  navigation styling starts here ////////////*/
+.navigation .navbar{
+  background-color: rgba(7, 90, 255, 0.4);
+  z-index: 1111111;
+  
+
+}
+.navigation .navbar-brand{
+  color: #ffffff!important;
+  font-size: 2rem;
+  z-index: 1111111;
+}
+
+
+.navigation .navbar .nav-link{
+  color: #ffffff!important;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  z-index: 1111111;
+
+}
+
+.navigation .ab-logo{
+  width: 250px;
+}
+.fa-bars {
+  color: #fff;
+  border: none;
+}
+
+.navbar-toggler{
+  border: none;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #0f8cdf;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+/*//////////////  navigation styling ends here ////////////*/
+
+/*//////////// banner section styling starts here ///////*/
+.bannerSection h2{margin-top: 70px;
+font-size: 1.9rem;
+font-weight: 900;
+font-family: sans-serif , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+.bannerSection h3{
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.bannerSection h1{
+  margin-top: 40px;
+  font-family: sans-serif , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-icons {
+  margin-top: 70px;
+}
+.social-icons li{
+  list-style: none;
+
+}
+
+
+.social-icons i{
+  font-size: 3rem;
+}
+
+.social-icons .fa-facebook-square{
+  color: #ffffff;
+  
+}
+
+.social-icons .fa-youtube{
+  color: #c41c1c;
+  
+}
+
+.social-icons .fa-linkedin{
+  color: rgb(27, 134, 221);
+  
+}
+
+
+.social-icons .fa-instagram-square{
+  color: rgb(218, 21, 119);
+}
+
+.social-icons .fa-twitter-square{
+  color: rgb(17, 83, 206);
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  height: 70px;
+  left: 50px;
+}
+
+.fixed .btn{
+  background: transparent;
+}
+
+.fixed i{
+  font-size: 3rem;
+  color: rgb(13, 238, 238);
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-delay: 3s;
+}
+
+
+@keyframes rotate{
+  0%   {top: 0px; color: rgb(17, 152, 206);}
+25%  {top: 200px; color: rgb(7, 35, 112); margin-top: 10px;}
+50%  {top: 100px; margin-top: 20px; }
+75%  {top: 200px;  margin-top: 0px;}
+100% {top: 0px;  margin-top: 30px; }
+}
+
+/*////// abaut us section styling starts here ///////////////////*/
+
+#abaut{
+  margin-top: 70px;
+  background-color: rgba(133, 138, 138, 0.4);
+  padding: 30px;
+}
+
+
+#abaut .box h3{
+  margin-top: 20px;
+}
+
+.abautus {
+  background-image: url("../images/bg8.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.box{
+  margin-top: 150px;
+}
+.abautus::before{
+  content: " ";
+  background-color:rgba(0, 153, 255, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.abautus h1{
+  font-family: 'Noto Sans', sans-serif;
+  color: rgb(255, 255, 255);
+  z-index: 111111;
+}
+
+.abautnav {
+  background-color: #1c1c1f;
+  color: #fff !important;
+}
+.abautnav .nav-link , .abautnav .navbar-brand{
+  color: #ffffff !important;
+  
+  
+}
+
+.btns .btn{
+  font-size: 25px;
+}
+.mission h3 {
+display: inline-block;
+margin-top: 40px;
+font-family: 'Open Sans', sans-serif;
+}
+.mission h5{
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/*////// abaut us section styling ends here ///////////////////*/
+
+/*$$$$$$$$$          services section styling starts here        *$$$$$$$$$*/
+.service-text{
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-link{
+      margin: 0 auto !important;
+      border-radius: 10%;
+      box-shadow: 2px 2px 12px rgb(4, 78, 83);
+      background-color: rgb(12, 207, 214);
+      color: #fff;
+}
+
+.card-link:hover{
+  color: rgb(219, 131, 15) !important;
+  font-size: 1.1rem !important;
+}
+.card{
+  text-align: center;
+  border: 1px solid rgb(138, 137, 137);
+  padding: 10px;
+}
+.card h4{
+  color: rgb(12, 216, 90) !important;
+}
+.service-icons{
+  font-size: 11rem;
+  color: rgb(8, 202, 89);
+  align-self: center;
+}
+
+.fa-internet-explorer {
+  color:  #17a2b8;;
+}
+
+
+
+/*$$$$$$$$$          services section styling starts here        *$$$$$$$$$*/
+
+
+
+
+
+/*//////// contact us section styling starts here /////////////*/
+
+.CONTACT{
+  width: 100%;
+  height: auto;
+  
+}
+
+.CONTACT li{
+  list-style: none;
+  padding: 5px;
+  font-size: 1.8rem;
+  color: #222020!important;
+}
+
+.CONTACT li i{
+  margin-right: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(0, 255, 242);
+}
+
+.CONTACT li h4{
+  color: #1c1c1f!important;
+}
+
+
+.contact-icons h4{
+  display: inline-block;
+}
+
+
+
+/*//////// contact us section styling ends here /////////////*/
+
+
+/* &&&&&&&&& footer styling starts here &&&&&&&&& */
+
+
+
+#footer {
+  width:  100%;
+  height: auto;
+  background-color: #1c1c1f
+}
+
+
+#footer a{
+  color: #ffffff !important; 
+  text-decoration: none;
+}
+
+#footer a :hover{
+  color: yellow !important;
+  text-decoration: none;
+}
+
+#footer i {
+  color: yellow;
+}
+
+#footer h3{
+  padding-top: 30px;
+  color: #5bb6d4 !important;
+}
+
+.footersection h4 {
+  font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+/* &&&&&&&&& footer styling ends here &&&&&&&&& */
+
+/* @@@@@@@ top btn-styling @@@@@@*/
+
+.my-btn{
+  
+  position: fixed;
+  bottom:40px;
+  right: 40px;
+  color: rgb(0, 255, 170);
+}
+
+.my-btn i{
+  font-size: 2rem;
+}
+
+#btn{
+  background-color: #0066ff;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* @@@@@@@ top btn-styling ends here @@@@@@*/
+
+
+
+
+
+
+
+
+/* ^^^^^^^^^^ media query starts here ^^^^^^^ */
+
+@media only screen and (max-width : 100px){
+  #btn{
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+  }
+
+  .header{
+      width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width : 420px){
+  .header .navbar-brand{
+      font-size: 15px;
+  }
+  
+  #srvices h1{
+      font-size: 1.8rem;
+  }
+
+  #srvices h3{
+      font-size: 1.3rem;
+  }
+
+  .card-link{
+      margin: 0 auto !important;
+      border-radius: 30%;
+      box-shadow: 2px 2px 2px black;
+  }
+
+  .card {
+      margin-top: 50px;
+  }
+
+  #btn{
+      display: none!important;
+  }
+
+ #contact h1{
+     font-size: 35px;
+ }
+
+ #contact h4 {
+  font-size: 15px;
+ }
+
+ #footer h4 {
+  font-size: 18px;
+ }
+
+ .navigation .navbar-brand{
+     font-size: 15px;
+ }
+
+ .abautus h3{
+     font-size: 1.3rem;
+ }
+
+ .abautus h4{
+     font-size: 15px;
+ }
+
+ #footer h3{
+     font-size: 20px;
+ }
+
+ .flex{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+}
+
+
+
+
+
+
+/* ^^^^^^^^^^ media query starts here ^^^^^^^ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

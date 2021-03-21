@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+}
+
+a{
+    text-decoration: none!important;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+  
+/*  header section starts here  */
+
+/*  navigation section starts here  */
+.headerSection {
+    background-image: url("../images/bg11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    height: 100vh;
+    
+    
+}
+
+
+.headerSection .banner{
+    width: 100%!important;
+   z-index: 1;
+    height: 90vh;
+}
+
+.logo-img{
+    width: 250px;
+    height: 50px;
+}
+
+
+
+
+.fa-bars {
+    color: #fff;
+    border: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #0f8cdf;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+/*  navigation section ends here  */
+/*  banner section starts here  */
+
+.banner .box{
+    margin-top: 150px;
+    text-align: left;
+   
+    
+}
+
+
+
+.banner .box h3{
+    color: rgb(241, 74, 8);
+    text-shadow: 1px 1px 1px black;
+    font-size: 3rem;
+}
+.banner .box h2{
+    color: rgb(18, 91, 247);
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+    font-size: 1.9rem;
+}
+
+.banner .box h5{
+    margin-top: 10px;
+   
+    color: rgb(143, 29, 8);
+}
+
+.banner .box p{
+    color: rgb(12, 12, 19);
+  
+    text-align: left;
+    font-size: 1.2rem;
+}
+.btn-1 {
+    border: solid rgb(16, 176, 187) 2px;
+    margin-top: 20px;
+    background-color: rgb(15, 127, 161);
+    color: #fff!important;
+    
+}
+
+.btn-1 a{
+    color: #fff;
+}
+
+/*  
+*/
+
+
+* {
+    box-sizing: border-box;
+  }
+ 
+  .wrapper-btn {
+    max-width: 65rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 5rem;
+    text-align: center;
+    background: #fff;
+    border: 0.5rem solid #34495e;
+  }
+  hr {
+    border: 0;
+    border-bottom: 0.0625rem solid #bbb;
+    margin: 3rem 0;
+  }
+  .my-btn-one {
+    font-size: 20px;
+    background: #e68332;
+    color: #fff;
+    border: 2px solid #ddb663;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+   .my-btn-one:hover {
+    color: #3498db;
+  }
+   .my-btn-one::after {
+    content: "";
+    background: #f16203;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+   .my-btn-one[class^="slide"]::after {
+    transition: all 0.35s;
+  }
+    .my-btn-one[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+   .slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+   .slide_from_right::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+  }
+   .slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+   .slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+   [class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+   [class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+   .grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+   .grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+   .grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+   .grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+   .grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+   .grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+   .grow_skew_backward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+  }
+   .grow_skew_backward:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+  }
+   .grow_spin::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+  }
+   .grow_spin:hover::after {
+    transform: scale(1, 1) rotate(0deg);
+  }
+
+
+
+
+
+.btn-2{
+ 
+    background-color: rgb(6, 49, 241);
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+   
+}
+
+.btn-2 a{
+    color: #fff;
+}
+
+
+
+
+/*  banner section ends here  */
+/*  header section ends here  */
+/*  our courses section starts here  */
+
+.coursesSection{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.coursesSection .box{
+    margin-top: 70px;
+    box-shadow: 2px 2px 12px black;
+    height: 200px;
+    
+}
+
+.coursesSection .box:hover{
+    transform: rotateX(20deg);
+    transform: scale(1.1);
+    
+}
+
+.coursesSection .box h3{
+    padding: 20px;
+    color: rgb(65, 61, 61);
+}
+
+.coursesSection .box h6{
+    padding: 20px;
+    color: rgb(10, 147, 238);
+    font-weight: 700;
+    
+}
+.btn-div{
+    margin: 0 auto;
+    
+    transform: translate(25%,+50%);
+}
+
+
+.coursesSection .box .btn-2{
+    margin: 0 auto;
+    
+}
+
+
+
+/*  our courses section ends here  */
+
+/*  our abautusSection section starts here  */
+
+.abautusSection{
+    width: 100%;
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.youtub-icon {
+    width: 40px;
+}
+
+
+
+
+/*  our abautusSection section ends here  */
+/*  our footer section starts here  */
+
+
+.footer{
+    width: 100%;
+    padding: 70px;
+    background-color: rgb(26, 44, 206);
+    
+}
+.footer ul{
+    margin-top: 20px;
+}
+
+.footer li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer a{
+    color: rgb(222, 222, 223);
+    text-decoration: none;
+    padding: 5px!important;
+    display: inline-block;
+}
+
+.footer h3{
+    text-align: center;
+    color: #fff;
+}
+.footer .btn-2{
+    font-size: 18px;
+    color: blue;
+    font-weight: 700;
+    background-color: #fff;
+    border: solid rgb(19, 208, 255) 2px;
+}
+
+
+.footer h5,p,h6{
+    text-align: center;
+    color: #fff;
+}
+/*  our footer section ends here  */
+/* registration form styling starts herer */
+
+#form{
+    margin-top: 50px;
+}
+
+.loginsection  .box{
+    width: 400px;
+    height: 400px;
+    border: solid rgb(8, 106, 235) 1px;
+    margin: 20px auto;
+    
+}
+
+.loginsection .logo-box{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.loginsection .form-control {
+    width: 300px;
+    margin: 0 auto;
+    font-weight: 500;
+    padding: 10px;
+    border: solid rgb(11, 112, 245) 1px!important;
+}
+
+.loginsection ::placeholder{
+    color: rgb(17, 135, 231);
+    font-size: 20px;
+
+}
+.loginsection .btn-2{
+   
+    margin-left: 70px;
+}
+
+
+
+.loginsection .small{
+    margin: 0 auto;
+    color: black;
+}
+
+.loginsection .small h6{
+    color: black!important;
+    font-size: 20px;
+}
+/* registration form styling ends herer */
+
+/* our courses section starts here */
+.coursesSection-2{
+    width: 100%;
+    height: 100vh;
+}
+.coursesSection-2 .box-2{
+    margin-top: 70px;
+}
+  
+
+.coursesSection .text-center{
+   padding-top: 20px;
+}
+
+.center-div{
+    margin-top: 20px;
+}
+.coursesSection-2 .box-2 h3{
+    padding: 10px;
+    color: rgb(65, 61, 61);
+}
+
+.coursesSection-2 .box-2 h6{
+    padding: 10px;
+    color: rgb(10, 147, 238);
+    font-weight: 700;
+    
+}
+.btn-div{
+    margin: 0 auto;
+    
+    transform: translate(25%,+50%);
+}
+
+
+.coursesSection-2 .box-2 .btn-2{
+    margin: 0 auto;
+    
+}
+
+.coursesSection-2 .box-2{
+    box-shadow: 2px 2px 12px gray;
+}
+
+.coursesSection-2 .box-2:hover{
+    transform: scale(1.2);
+}
+
+.coursesSection-2 a{
+    text-decoration: none;
+}
+
+/* classes section styling starts here  */
+
+.classSection .control{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid rgb(26, 128, 243) 2px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.classSection .box{
+   
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.classSection .control ul{
+    margin-left: 30px;
+}
+
+
+.classSection li{
+    list-style: none;
+    padding: 5px;
+    color: rgb(25, 25, 26);
+    margin-right: 70px!important;
+}
+
+.classSection h3{
+    color: rgb(15, 89, 185)!important;
+}
+.classSection p{
+    color: rgb(29, 30, 31)!important;
+    font-weight: 600;
+}
+.classSection h4{
+    color: rgb(11, 241, 69);
+}
+.blue{
+    color: rgb(19, 96, 184);
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* classes section styling starts here  */
+
+/* 10th class section starts here */
+
+.tenthSection .box-3{
+    margin-top: 50px; 
+    border: solid rgb(173, 20, 20) 2px;   
+}
+
+/* 10th class section starts here */
+
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 121;
+}
+
+/* our courses section ends here */
+
+
+.mkclSection{
+    width: 100%;
+    
+    
+}
+
+.carouselExampleIndicators{
+    position: absolute;
+}
+
+.mkclSection li{
+    color: black!important;
+}
+
+.carousel-indicators{
+    position: fixed!important;
+    bottom: 20px!important;
+    color: black!important;
+}
+
+.carousel-indicators li{
+    color: black!important;
+}
+
+.carousel-indicators #black{
+    color: rgb(8, 153, 179)!important;
+    background-color: rgb(13, 199, 90);
+    padding: 2px;
+}
+.carousel-item{
+    border: solid black 2px;
+    margin-top: 20px;
+}
+
+/*//////// bloging section starts here //////*/
+
+.box{
+    margin-top: 20px;
+}
+
+.box h5{
+    font-weight: 500;
+    font-family: 'Pragati Narrow', sans-serif;
+    
+}
+
+
+/*//////// bloging section starts here //////*/
+
+
+
+/*///// RegistrationSection styling starts here ////*/
+
+.R-body{
+    background : url("../images/ed.jfif" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    height: 100vh;
+}
+
+.RegistrationSection {
+    background-image: url("../images/bg10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    height: 100vh;
+}
+.RegistrationSection .form-control{
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(0, 43, 236) 2px;
+}
+
+
+
+
+
+
+
+/*///// RegistrationSection styling starts here ////*/
+
+@media only screen and (max-width:1000px) {
+    
+    .headerSection{
+        height: auto;
+    }
+    
+    .coursesSection{
+        height: auto;
+    }
+
+    .banner .box{
+        margin-top: 100px;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    
+    .banner .box{
+        margin-top: 10px;
+        width: 760px!important;
+        justify-content: left;
+    }
+
+
+}
+
+
+
+/* %%%%^^^^^^%%%%% drome menu styling %%%%%%^^^^^%%%%%% */
+
+.dropme{
+    display: none;
+}
+
+.hoverme :hover .a1{
+   display: block;
+}
+
+.hiddin
